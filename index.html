@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trámites Salud Colombia | Ayuda con tu EPS</title>
-    <meta name="description" content="¿Problemas con tu EPS? Te ayudamos a redactar tutelas y derechos de petición para agilizar la entrega de medicamentos, citas y cirugías en Colombia.">
+    <meta name="description" content="¿Problemas con tu EPS? Te ayudamos a redactar documentos legales para agilizar la entrega de medicamentos, citas y cirugías en Colombia.">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Trámites Salud Colombia | Ayuda con tu EPS">
@@ -12,22 +12,63 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
 
-    <!-- Datos Estructurados SEO (JSON-LD) -->
+    <!-- Datos Estructurados SEO (Servicio Profesional) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Trámites Salud Colombia",
-      "description": "Servicio de redacción de documentos legales (Tutelas y Derechos de Petición) para reclamaciones de salud ante EPS en Colombia.",
-      "areaServed": "CO",
-      "priceRange": "$$",
-      "serviceType": "Legal Document Preparation"
+      "description": "Servicio de redacción de documentos legales para reclamaciones de salud ante EPS en Colombia.",
+      "areaServed": "CO"
+    }
+    </script>
+
+    <!-- Datos Estructurados SEO (Preguntas Frecuentes - Optimizado E-E-A-T) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Qué trámite realizan exactamente ante la EPS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estructuramos y redactamos Derechos de Petición fundamentados en la normatividad vigente. Este documento se radica ante tu EPS y la Superintendencia de Salud para exigir la entrega de medicamentos, citas o procedimientos."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Está garantizado que me entregarán el medicamento o la cita?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Nuestro servicio es una obligación de medio. Proporcionamos la estructura jurídica técnica para maximizar tus probabilidades de éxito, pero la decisión final recae en la EPS y la Supersalud."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tiene la EPS para responder?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un Derecho de Petición tiene un plazo de 15 días hábiles, pero cuando se trata de vulneraciones al derecho a la salud, las entidades deben dar respuesta prioritaria."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Ustedes también radican Acciones de Tutela?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestro servicio principal se enfoca en peticiones directas. Si esta vía se agota sin solución, el caso se evalúa por aparte para determinar si es viable estructurar una Acción de Tutela."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Qué documentos exigen para iniciar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es obligatorio contar con la orden médica oficial o fórmula expedida por la EPS y tu documento de identidad."
+        }
+      }]
     }
     </script>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome para Íconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -45,7 +86,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased relative">
 
-    <!-- Header Institucional (Ahora siempre centrado) -->
+    <!-- Header Institucional -->
     <header class="bg-juridico shadow-md border-b-4 border-urgencia">
         <div class="max-w-6xl mx-auto px-4 py-5 flex justify-center items-center">
             <h1 class="text-2xl md:text-3xl font-black text-white tracking-tight uppercase">
@@ -59,70 +100,96 @@
         <div class="text-center mb-12 max-w-3xl mx-auto">
             <span class="bg-red-100 text-urgencia font-bold px-4 py-1.5 rounded-full text-xs md:text-sm uppercase tracking-wider mb-6 inline-block shadow-sm">Gestión Rápida y Segura</span>
             
-            <!-- Título proporcionado -->
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-juridico leading-snug mb-6">
                 Las demoras de tu EPS no pueden jugar con tu salud
             </h2>
             
             <p class="text-base md:text-lg text-gray-700 mx-auto font-medium leading-relaxed mb-4">
-                Redactamos los documentos y los presentamos para que tu EPS responda.
+                Redactamos los documentos exactos (Derechos de Petición) para que tu EPS responda.
             </p>
             
-            <!-- Resalte más limpio -->
             <div class="inline-block bg-blue-50 border border-blue-100 text-juridico font-bold px-4 py-2 rounded-lg text-sm md:text-base shadow-sm">
                 Evaluamos tu caso sin compromiso. Solo pagas si el trámite es viable.
             </div>
         </div>
 
-        <!-- Tarjetas de Alta Conversión -->
-        <div class="grid md:grid-cols-2 gap-6 lg:gap-10 max-w-4xl mx-auto">
-            
-            <!-- Card 1: Medicamentos -->
+        <!-- Tarjetas -->
+        <div class="grid md:grid-cols-2 gap-6 lg:gap-10 max-w-4xl mx-auto mb-16">
+            <!-- Card 1 -->
             <div class="bg-white rounded-2xl shadow-lg border-l-8 border-juridico p-8 flex flex-col hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <div class="flex items-center mb-4">
                     <i class="fa-solid fa-pills text-3xl lg:text-4xl text-juridico mr-4"></i>
                     <h3 class="text-xl lg:text-2xl font-bold text-juridico">Medicamentos</h3>
                 </div>
-                <!-- Texto oscurecido y proporcionado -->
                 <p class="text-gray-800 font-medium mb-8 flex-grow text-base leading-relaxed">
                     ¿La farmacia dice que no hay sistema o está agotado? Te ayudamos a exigir la entrega de tu fórmula médica con el respaldo de la Ley Estatutaria en Salud.
                 </p>
-                <a href="https://wa.me/573053447946?text=Hola,%20necesito%20evaluar%20mi%20caso.%20Mi%20EPS%20no%20me%20entrega%20mis%20medicamentos." 
+                <a href="https://wa.me/573053447946?text=Hola.%20Sabemos%20que%20tu%20salud%20no%20da%20espera.%20En%20Tr%C3%A1mites%20Salud%20Colombia%20te%20vamos%20a%20ayudar." 
                    target="_blank"
                    class="bg-juridico hover:bg-gray-900 text-white font-bold py-3.5 px-6 rounded-lg text-center transition-colors shadow-md text-base md:text-lg">
                     <i class="fa-brands fa-whatsapp mr-2"></i> Ayuda con mis medicamentos
                 </a>
             </div>
 
-            <!-- Card 2: Especialistas / Cirugías -->
+            <!-- Card 2 -->
             <div class="bg-white rounded-2xl shadow-lg border-l-8 border-urgencia p-8 flex flex-col hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <div class="flex items-center mb-4">
                     <i class="fa-solid fa-user-doctor text-3xl lg:text-4xl text-urgencia mr-4"></i>
                     <h3 class="text-xl lg:text-2xl font-bold text-juridico">Citas y Cirugías</h3>
                 </div>
-                <!-- Texto oscurecido y proporcionado -->
                 <p class="text-gray-800 font-medium mb-8 flex-grow text-base leading-relaxed">
                     ¿Meses esperando una autorización o especialista? Radicamos el recurso técnico para exigir tu atención médica y saltar los bloqueos de tu EPS.
                 </p>
-                <a href="https://wa.me/573053447946?text=Hola,%20necesito%20evaluar%20mi%20caso.%20Tengo%20retrasos%20con%20una%20cita%20m%C3%A9dica%20o%20cirug%C3%ADa." 
+                <a href="https://wa.me/573053447946?text=Hola.%20Sabemos%20que%20tu%20salud%20no%20da%20espera.%20En%20Tr%C3%A1mites%20Salud%20Colombia%20te%20vamos%20a%20ayudar." 
                    target="_blank"
                    class="bg-urgencia hover:bg-red-700 text-white font-bold py-3.5 px-6 rounded-lg text-center transition-colors shadow-md text-base md:text-lg">
-                    <i class="fa-brands fa-whatsapp mr-2"></i> Ayuda con mi cita o cirugía
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Exigir cita o cirugía
                 </a>
             </div>
-
         </div>
+
+        <!-- Nueva Sección: Preguntas Frecuentes Definitivas -->
+        <section class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-16">
+            <h3 class="text-2xl font-bold text-juridico mb-6 text-center">Preguntas Frecuentes</h3>
+            
+            <div class="space-y-6">
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2"><i class="fa-solid fa-file-signature text-urgencia mr-2"></i>¿Qué trámite realizan exactamente ante la EPS?</h4>
+                    <p class="text-gray-600">Estructuramos y redactamos Derechos de Petición fundamentados en la normatividad vigente (Ley 1751 y 1755). Este documento se radica ante tu EPS y la Superintendencia de Salud para exigir tu atención.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2"><i class="fa-solid fa-scale-balanced text-urgencia mr-2"></i>¿Está garantizado que me entregarán el medicamento o cita?</h4>
+                    <p class="text-gray-600">No. Nuestro servicio es una <strong>obligación de medio, no de resultado</strong>. Te proporcionamos la estructura jurídica técnica para ejercer presión legal, pero la decisión final recae exclusivamente en la EPS.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2"><i class="fa-regular fa-clock text-urgencia mr-2"></i>¿Cuánto tiempo tardan en responder?</h4>
+                    <p class="text-gray-600">Por ley, el plazo es de 15 días hábiles. Sin embargo, al tratarse del derecho fundamental a la salud, exigimos la priorización y respuesta urgente del trámite.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2"><i class="fa-solid fa-gavel text-urgencia mr-2"></i>¿Radican Acciones de Tutela?</h4>
+                    <p class="text-gray-600">Nos enfocamos primero en destrabar el sistema mediante peticiones ante la Supersalud. Si la EPS ignora el requerimiento, la Acción de Tutela se evalúa como un proceso independiente y por aparte.</p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-gray-800 mb-2"><i class="fa-solid fa-file-medical text-urgencia mr-2"></i>¿Qué documentos necesito para iniciar?</h4>
+                    <p class="text-gray-600">Requerimos estrictamente la <strong>orden médica o fórmula oficial</strong> expedida por la EPS y la foto de tu cédula. Sin soporte médico, no radicamos solicitudes.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Botón Flotante WhatsApp -->
-    <a href="https://wa.me/573053447946?text=Hola,%20Necesito%20asesor%C3%ADa%20con%20mi%20EPS." 
+    <a href="https://wa.me/573053447946?text=Hola.%20Sabemos%20que%20tu%20salud%20no%20da%20espera.%20En%20Tr%C3%A1mites%20Salud%20Colombia%20te%20vamos%20a%20ayudar." 
        target="_blank" 
        class="fixed bottom-6 right-6 bg-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center h-14 w-14 md:h-16 md:w-16">
         <i class="fa-brands fa-whatsapp text-2xl md:text-3xl"></i>
     </a>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 py-8 text-center text-gray-400 text-sm mt-8 border-t border-gray-800">
+    <footer class="bg-gray-900 py-8 text-center text-gray-400 text-sm border-t border-gray-800">
         <p class="font-bold text-gray-300 text-sm mb-2">© 2026 Trámites Salud Colombia.</p>
         <p class="text-xs opacity-75 max-w-2xl mx-auto px-4 leading-relaxed">
             Servicio de redacción y acompañamiento jurídico (obligación de medio). No somos una EPS, ni una entidad del Estado, ni garantizamos resultados judiciales.
